@@ -39,7 +39,7 @@ function Preferences({isMobile}) {
        
             try{
                 console.log("making request...")
-                let request = await axios.post('https://meetingsbackend.onrender.com/user/signup',{
+                let request = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/user/signup`,{
                     ...user,
                     username
 
@@ -142,7 +142,7 @@ function Preferences({isMobile}) {
             
             try{
                 
-                let request = await axios.post('https://meetingsbackend.onrender.com/user/signup',{
+                let request = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/user/signup`,{
                     ...user,
                     username
 

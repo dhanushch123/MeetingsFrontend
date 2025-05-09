@@ -103,7 +103,7 @@ function Edit2({setNext,setSuccess,details,setBack,isMobile}) {
           details.color = color
           
           try{
-            let request = await axios.put(`https://meetingsbackend.onrender.com/event/updevent/${details._id}`,details,{withCredentials : true})
+            let request = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/event/updevent/${details._id}`,details,{withCredentials : true})
            
             setBack(false)
             setSuccess({

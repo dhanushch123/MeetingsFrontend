@@ -40,7 +40,7 @@ function Settngs({user,setSuccess,success,isMobile}) {
                         if(password.length > 0 && password == ConfirmPassword)
                         {
                             try{
-                                let request = await axios.put(`http://localhost:2500/user/update/${user.id}`,{
+                                let request = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/user/update/${user.id}`,{
                                     firstname : FirstName,
                                     lastname : LastName,
                                     password,
@@ -133,7 +133,7 @@ function Settngs({user,setSuccess,success,isMobile}) {
         {isMobile ? (<div className={styles.End}> 
             <button onClick={async()=>{
                 try{
-                    let request = await axios.post('http://localhost:2500/user/logout',{}, {withCredentials : true})
+                    let request = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/user/logout`,{}, {withCredentials : true})
                     if(request.data.status == 200){
                         navigate('/')
                     }

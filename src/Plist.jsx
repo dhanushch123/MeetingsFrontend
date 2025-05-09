@@ -55,7 +55,7 @@ function Plist({item,setShowParticipants,activeIndex}) {
             // go to the backend and set status
             try{
                
-                let request = await axios.put(`https://meetingsbackend.onrender.com/user/setStatus/${item._id}`,{status : "accepted"},{withCredentials : true})
+                let request = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/user/setStatus/${item._id}`,{status : "accepted"},{withCredentials : true})
                 setShowParticipants(false)
             }
             catch(err)
@@ -68,7 +68,7 @@ function Plist({item,setShowParticipants,activeIndex}) {
             item.status = "rejected"
             try{
              
-                let request = await axios.put(`https://meetingsbackend.onrender.com/user/setStatus/${item._id}`,{status : "rejected"},{withCredentials : true})
+                let request = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/user/setStatus/${item._id}`,{status : "rejected"},{withCredentials : true})
                 setShowParticipants(false)
             }
             catch(err)

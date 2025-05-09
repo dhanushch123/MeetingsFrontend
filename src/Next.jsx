@@ -102,7 +102,7 @@ function Next({setActiveComponent,user,setNext,setSuccess,setNum,isMobile}) {
           details.color = color
           
           try{
-            let request = await axios.post('https://meetingsbackend.onrender.com/event/create',details,{withCredentials : true})
+            let request = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/event/create`,details,{withCredentials : true})
             
 
               setSuccess({

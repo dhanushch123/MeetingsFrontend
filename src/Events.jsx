@@ -40,7 +40,7 @@ function Events({isMobile}) {
   async function fetchDetails()
   {
     try{
-      let request = await axios.get('https://meetingsbackend.onrender.com/event', {withCredentials : true})
+      let request = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/event`, {withCredentials : true})
       if(request.data.status == 200){
       // we need username and   participants in the database
       setUname(`${request.data.user.username}`)
@@ -146,7 +146,7 @@ function Events({isMobile}) {
 
       <div className={styles.ending}> <div className= {styles.fst}> <img src={Emj}/> <p> {user.username} </p> </div> <div className={styles.scnd}> <img onClick={async ()=>{
         try{
-          let request = await axios.post('https://meetingsbackend.onrender.com/user/logout',{}, {withCredentials : true})
+          let request = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/user/logout`,{}, {withCredentials : true})
           if(request.data.status == 200){
             navigate('/')
           }
