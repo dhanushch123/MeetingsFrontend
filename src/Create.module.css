@@ -280,6 +280,11 @@
     .edetails2 .date{
         width : 35dvw;
     }
+    .edetails2 .dt{
+        width : 94dvw;
+        display: flex;
+        gap : 0.75dvw;
+    }
     .d2 .sc{
         width : 30dvw;
         

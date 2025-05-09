@@ -18,7 +18,7 @@ import F5 from './components/F5.jpeg'
 import F6 from './components/F6.jpeg'
 import F7 from './components/F7.jpeg'
 import axios from 'axios'
-import { useRef} from 'react';
+
 
 function Plist({item,setShowParticipants,activeIndex}) {
  
@@ -39,7 +39,7 @@ function Plist({item,setShowParticipants,activeIndex}) {
         return randomValue;
       }
 
-      const plistRef = useRef(null); 
+      
 
       
     
@@ -47,10 +47,10 @@ function Plist({item,setShowParticipants,activeIndex}) {
     
 
   return (
-    <div ref={plistRef} className={styles.plist}>
+    <div  className={styles.plist}>
         <div className={styles.top}> 
          <p> Participants <span style={{color:'#B6B6B6'}}>  ({`${item.participants.length}` })</span></p>
-         {(activeIndex == 1 || activeIndex == 2)? (<button style={{backgroundColor : '#00C35F'}} className={styles.AR}><img onClick={async()=>{
+         {(activeIndex == 1 || activeIndex == 2)? (<button onClick={async()=>{
             item.status = "accepted"
             // go to the backend and set status
             try{
@@ -62,8 +62,8 @@ function Plist({item,setShowParticipants,activeIndex}) {
             {
                 
             }
-         }} src={Accept}/> Accept </button>) : ""}
-         {(activeIndex == 0 || activeIndex == 1)?(<button style={{backgroundColor : "#ED0000"}} className={styles.AR}><img onClick={async()=>{
+         }} style={{backgroundColor : '#00C35F'}} className={styles.AR}><img  src={Accept}/> Accept </button>) : ""}
+         {(activeIndex == 0 || activeIndex == 1)?(<button onClick={async()=>{
             // go to the backend and set the status
             item.status = "rejected"
             try{
@@ -75,7 +75,7 @@ function Plist({item,setShowParticipants,activeIndex}) {
             {
                
             }
-         }} src={Reject}/> Reject </button>):""}
+         }} style={{backgroundColor : "#ED0000"}} className={styles.AR}><img  src={Reject}/> Reject </button>):""}
          </div> 
          <div className={styles.down}>
          {
