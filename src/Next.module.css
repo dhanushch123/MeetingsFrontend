@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main
+{
+    height : 79dvh;
+    width : 73dvw;
+    background-color: white;
+    margin-left: 3dvw;
+    border-radius: 4dvb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding : 2dvh 0px;
+    align-items: center;
+}
+
+.main .heading
+{
+    font-family: "Roboto",sans-serif;
+    color : #1877F2;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 2dvh;
+    
+}
+.main .line
+{
+    height: 1.5px;
+    width : 73dvw;
+    background-color: #B6B6B6;
+    margin-bottom: 2dvh;
+}
+.Banner{
+    
+    width : 62dvw;
+}
+.Banner p 
+{
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 1dvh;
+}
+
+.box 
+{
+    background-color: #342B26;
+    height : 22dvh;
+    width : 19dvw;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box .face 
+{
+    background-color: #D9D9D9;
+    height : 55px;
+    width : 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5dvh;
+    
+}
+.face img
+{
+    height : 45px;
+    width : 45px;
+}
+.box input
+{
+    border : none;
+    outline : none;
+    color : white;
+    font-size: 14px;
+    font-weight: 500;
+    width : 8dvw;
+    font-family: "Poppins",sans-serif;
+
+    background-color: #342B26;
+}
+
+.box .section
+{
+    display: flex;
+    gap : 5px;
+    align-items: center;
+}
+.section .ic
+{
+    position: static;
+    cursor : pointer;
+}
+
+.box input::focus
+{
+    border : none;
+    outline : none;
+}
+
+.color 
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5dvh;
+}
+.color .colors
+{
+    display: flex;
+    gap : 3px;
+    margin-top: 0dvh;
+}
+.colors .circle
+{
+    height : 18px;
+    width : 18px;
+    border-radius: 50%;
+    
+}
+
+
+.color  p
+{
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.dis
+{
+    display: flex;
+    gap : 5px;
+    margin-top: 1.5dvh;
+    align-items: center;
+    margin-bottom: 3dvh;
+    
+}
+.dis .bg
+{
+    height : 20px;
+    width : 20px;
+    border-radius: 1dvb;
+}
+.dis .bgvalue
+{
+    background-color: #F3F3F1;
+    font-family: "Poppins",sans-serif;
+    font-size: 10px;
+    width : 10dvw;
+    padding: 3px 4px;
+}
+
+.invite
+{
+    width : 62dvw;
+    margin-top: 2dvh;
+    display: flex;
+    flex-direction: column;
+}
+.red
+{
+    color : red;
+}
+
+.field
+{
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    gap : 4dvw;
+    color: #343434;
+    align-items: center;
+    margin-bottom: 2dvh;
+}
+
+.field input
+{
+    border: 1.5px solid #E0E0E0;
+    border-radius: 1.5dvb;
+    height : 6dvh;
+    width : 34dvw;
+    padding : 1dvh 1dvw;
+
+}
+.field .label
+{
+    font-size: 13px;
+    height : 3dvh;
+    width : 10dvw;
+}
+.field input:focus
+{
+    outline : none;
+}
+
+.field input::placeholder
+{
+    color: #8A8A8A;
+    font-size: 10px;
+    font-family: "Poppins",sans-serif;
+}
+
+
+
+.d2
+{
+    width : 62dvw;
+   
+    display: flex;
+    gap : 2dvw;
+    padding-left: 30dvw;
+    margin-top: 1dvh;
+}
+
+
+.cancel
+{
+    height: 5dvh;
+    width : 8dvw;
+    background-color: #F3F3F1;
+    color: black;
+
+}
+.save
+{
+    height: 5dvh;
+    width : 8dvw;
+    background-color: #1877F2;
+    color: white;
+}
+
+@media(max-width : 480px){
+    .main{
+        width : 90dvw;
+      
+        margin-left: 2dvw;
+        padding: 1dvh 0;
+        align-items : start;
+    }
+    .main .heading{
+        margin-bottom: 1dvh;
+    }
+    .Banner{
+        width : 90dvw;
+        
+    }
+    .Banner .box{
+        width : 85dvw;
+    }
+    .box input{
+        width : 24dvw;
+    }
+    .color p{
+        font-size: 14px;
+        margin-top: 1dvh;
+    }
+    .color .colors{
+        gap : 10px;
+    }
+    .colors .circle{
+        height : 20px;
+        width : 20px;
+    }
+    .dis{
+        gap : 10px;
+    }
+    .dis .bg{
+       height : 20px;
+       width : 20px;
+    }
+    .dis .bgvalue{
+       
+        width : 25dvw;
+        padding: 4px 5px;
+        font-size: 13px;
+    }
+    .invite{
+        width : 90dvw;
+    }
+    .field {
+        gap : 1.5dvw;
+    }
+    .field .label{
+        width : 25dvw;
+        
+    }
+    .field input{
+        width : 63dvw;
+    }
+    .d2{
+        
+        width : 90dvw;
+        justify-content: space-between !important;
+        padding-left : 0;
+        margin-top: 5dvh;
+
+    }
+    .d2 button{
+        width : 30dvw;
+        font-size: 14px;
+        border-radius: 1.3dvb;
+    }
+    
+}

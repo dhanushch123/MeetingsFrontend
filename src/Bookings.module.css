@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.create
+{
+    position: relative;
+    z-index: 2;
+}
+
+
+.create .up
+{
+    width : 34dvw;
+    padding: 4dvh 2dvw;
+    font-family: "Poppins",sans-serif;
+    
+}
+.up .first
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.up .second
+{
+    font-size: 11px;
+}
+
+.create .main
+{
+    height : 81dvh;
+    width : 74dvw;
+    background-color: white;
+    margin-left: 2dvw;
+    border-radius: 2.5dvb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding : 1dvh 0px;
+    align-items: center;
+    border : 1.2px solid #00000059;
+    
+}
+
+.main .line {
+    height: 1px;  
+    width: 74dvw;
+    position: relative;
+    background-color: #00000059; 
+    
+    margin-bottom: 2dvh;
+}
+
+.line .blue {
+    position: absolute;
+    width: 7dvw; 
+    height: 2.5px; 
+    background-color: #1877F2;
+    border-radius: 5px;
+    bottom: -1px; 
+    transform: translateX(2dvw);
+    
+    
+    transition: left 0.3s ease-in-out;
+}
+
+.main .section {
+    display: flex;
+    gap: 4dvw;
+    width: 74dvw;
+    padding: 1.5dvh 2.5dvw;
+    box-sizing: border-box;
+    margin-bottom: 0.5dvh;
+    transition: color 0.3s;
+}
+
+
+
+
+
+
+.section p
+{
+    font-family: "Inter",sans-serif;
+    font-size: 14px;
+}
+
+.fc
+{
+    display: flex;
+    
+  
+    height : 10dvh;
+    width : 74dvw;
+    padding-left: 2.5dvw;
+    font-family: "Poppins";
+    box-sizing: border-box;
+    
+    align-items: center;
+}
+.fc .c1
+{
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    gap : 0.7dvh;
+    margin-right: 7dvw;
+    width : 9dvw;
+    
+}
+.c1 p:nth-child(2)
+{
+    color : #1877F2;
+    font-size: 11px;
+}
+.fc .c2
+{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap : 0.7dvh;
+    margin-right: 4.5dvw;
+    width: 12dvw;
+
+
+}
+.fc .c2 p:nth-child(2)
+{
+    font-size: 11px;
+    color : #6D6D6D;
+}
+
+
+.additional
+{
+    border: 1px solid #00000033;
+    background-color: #F3F3F1;
+    font-size: 11px;
+   
+    box-sizing: border-box;
+    height : 3.8dvh;
+    width : 5.7dvw;
+
+    border-radius: 1.5dvb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -3.4dvw;
+    margin-right: 4dvw;
+}
+.additional2
+{
+    border: 1px solid #FFFFFF33;
+    background-color: #616161;
+    font-size: 11px;
+    margin-left: -3.4dvw;
+    margin-right: 4dvw;
+    box-sizing: border-box;
+    height : 3.8dvh;
+    width : 5.7dvw;
+    color: white;
+    border-radius: 1.5dvb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcom{
+    background-color: #0dd642;
+    color : white;
+    border : none;
+}
+.reject{
+    background-color: #fe0000;
+    color : white;
+    border : none
+}
+
+.fc .c3
+{
+    color : #6D6D6D;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap : 0.5dvw;
+}
+.c3 img
+{
+    height : 14px;
+    width : 14px;
+}
+
+.plist
+{
+    position : absolute;
+    background-color: white;
+    box-shadow: 0px 2px 15px 0px #3d3b3b40;
+    height : 57dvh;
+    width : 25dvw;
+    z-index : 4;
+    top : 27dvh;
+    left : 53dvw;
+    border-top-left-radius: 2dvb;
+    border-bottom-left-radius: 2dvb;
+    padding : 3dvh 1dvw;
+    box-sizing: border-box;
+    
+}
+
+
+.plist .top p
+{
+    color: #343434;
+    font-family: "Poppins",sans-serif;
+    font-size: 13px;
+}
+.top
+{
+    display: flex;
+    gap : 0.5dvw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top .AR
+{
+    height : 4dvh;
+    width : 6dvw;
+    color : white;
+    border-radius: 3dvb;
+    padding: 3px 1dvw;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+   
+   
+    box-sizing: border-box;
+}
+
+.top button img
+{
+    height : 17px;
+    width : 17px;
+}
+
+.down
+{
+    margin-top : 3dvh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height : 43dvh;
+}
+
+.img
+{
+    height : 35px;
+    width : 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.det
+{
+    display: flex;
+    gap : 1.5dvw;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 1dvh;
+}
+.det p
+{
+    color : #808080;
+
+}
+.down .img img
+{
+    height : 35px;
+    width : 35px;
+    
+    object-fit: cover;
+}
+
+.listing
+{
+    
+    overflow-y:auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 74dvw;
+ 
+}
+
+
+.listing::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.listing::-webkit-scrollbar-track {
+    background: #b0b0b0; 
+    border-radius: 8px;  
+}
+
+.listing::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 8px; 
+    border: 2px solid #b0b0b0; 
+}
+
+
+.listing::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0; 
+}
+
+
+
+
+.down::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.down::-webkit-scrollbar-track {
+    background: #b0b0b0; 
+    border-radius: 8px;  
+}
+
+.down::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 8px; 
+    border: 2px solid #b0b0b0; 
+}
+
+
+.down::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0; 
+}
+
+@media(max-width : 480px){
+    .create{
+        display: flex;
+        flex-direction: column;
+        padding: 0 3dvw;
+    }
+    .create .up{
+        width : 94dvw;
+        padding: 3dvh 0;
+        padding-bottom: 1dvh;
+    }
+    .create .first{
+        display : flex;
+        align-items: center;
+        justify-content: space-between;
+       
+
+        
+    }
+    .up .second{
+        font-size: 12px;
+        width : 70dvw;
+    }
+    .create .main{
+        margin : 1dvh 0;
+        height : 75dvh;
+        width : 94dvw;
+        
+        
+    }
+    .main .line{
+        width : 94dvw;
+        margin-bottom: 1dvh;
+
+    }
+    .main .section{
+        
+        width : 94dvw;
+        gap : 8dvw;
+        padding-left: 3dvw;
+        
+        
+    }
+    
+    .section p{
+        font-size: 14px;
+        
+    }
+    .listing{
+        padding: 1dvh 0;
+        scrollbar-width: none;
+        width : 94dvw;
+        
+        
+    }
+    .plist
+    {
+    position : absolute;
+    background-color: white;
+    box-shadow: 0px 2px 14px 0px #7e7c7c40;
+    height : 43dvh;
+    width : 70dvw;
+    z-index : 4; 
+    top : 35dvh;
+    left : 25dvw;
+    border-top-left-radius: 2dvb;
+    border-bottom-left-radius: 2dvb;
+    padding : 2dvh 2.5dvw;
+    padding-bottom: 2dvh;
+    box-sizing: border-box;
+
+    }
+    .fc{
+        
+        width : 94dvw;
+       
+        
+        justify-content: space-around;
+        
+        height : 9dvh;
+        padding : 0 2dvw;
+        
+    }
+    .fc .c1{
+        
+        width : 28dvw;
+        
+        font-size: 11px;
+        margin-right: 0;
+
+    }
+    .fc .c2{
+      
+        font-size: 11px;
+        width : 30dvw;
+        margin-right: 0;
+        
+        
+
+        
+
+    }
+    .c2 div:nth-child(1){
+        display: flex;
+       
+        align-items: center;
+        gap : 1.5dvw;
+    }
+    .c2 .addOn{
+        display: flex;
+        align-items: center;
+        gap : 0.5dvw;
+        
+    }
+    .c2 .addOn p{
+        
+        font-size: 12px !important;
+    }
+    .addOn img{
+        height : 13px;
+        width : 13px;
+
+    }
+    
+    .fc .c3{
+        display : none;
+    }
+    #c3{
+        display: flex;
+    }
+
+    .additional,.additional2{
+        
+        width : 18dvw;
+        margin-right: 0;
+        font-size: 11px;
+        border-radius: 1.5dvb;
+
+    }
+    .fc c3{
+        font-size: 11px;
+    }
+    .down{
+        overflow-y: auto;
+        height : 33dvh;
+        margin-top: 1.5dvh;
+        
+        -webkit-overflow-scrolling: touch; 
+        scrollbar-width: none;
+    }
+    .down::-webkit-scrollbar{
+        display: none;
+    }
+    .top .AR{
+        width : 17dvw;
+        justify-content: center;
+    }
+    
+}
+@media(max-width : 380px){
+    .section p{
+        font-size: 14px;
+    }
+    .fc {
+        padding: 1dvw;
+    }
+    .fc .c1{
+        width : 30dvw;
+    }
+    .fc .c2 p:nth-child(2){
+        font-size: 10px;
+    }
+}

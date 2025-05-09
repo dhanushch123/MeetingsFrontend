@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    padding: 16px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .accepted{
+    color : rgb(27, 205, 27);
+    
+    
+  }
+  .rejected{
+    color : rgb(241, 8, 8);
+  }
+  .past{
+    
+    color : rgb(137, 131, 131);
+  }
+  .container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .container::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    border-radius: 10px;
+  }
+  .date{
+    font-weight: 400 !important;
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+  }
+  
+  .container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #66e0ff, #3399ff);
+  }
+  
+
+  .monthBox {
+    width: calc(25% - 12px);
+    min-width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff, #f5faff);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .monthBox:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  }
+  
+ 
+  .monthTitle {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #0072ff;
+    font-weight: bold;
+  }
+  
+ 
+  .eventItem {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  
+  .noEvents {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+  }
+
+  .monthBox::-webkit-scrollbar {
+    width: 4.5px;
+  }
+  
+  .monthBox::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 6px;
+  }
+  
+  .monthBox::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border-radius: 6px;
+  }
+  
+  .monthBox::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+  }
+
+@media(max-width : 480px){
+  .container{
+    height : 80%;
+  }
+  .container,.monthBox{
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none;
+  }
+  .monthBox::-webkit-scrollbar{
+    display: none;
+  }
+  .container::-webkit-scrollbar{
+    display: none;
+  }
+}
+  

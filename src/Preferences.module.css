@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container
+{
+    min-height: 100dvh;
+    max-height: 100dvh;
+    min-width: 100dvw;
+    max-width: 100dvw;
+    box-sizing: border-box;
+    display: flex;
+}
+.left
+{
+    min-height: 100dvh;
+    max-height: 100dvh;
+    min-width: 65dvw;
+    max-width: 65dvw;
+    box-sizing: border-box;
+    padding : 4dvh 4dvw;
+
+}
+
+.left .top
+{
+    display: flex;
+    
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 670;
+    align-items: center;
+    font-size: 18px;
+    gap : 2px;
+}
+
+.top img
+{
+    height : 35px;
+    width : 35px;
+}
+.left .body
+{
+    
+    margin: 4dvh 8dvw;
+    width : 50dvw;
+    height : 75dvh;
+}
+
+.body .head
+{
+    font-family: "Inter",sans-serif;
+    font-size: 28px;
+    font-weight: 620;
+}
+
+
+
+.body input
+{
+    box-sizing: border-box;
+    background-color: #F6F7F5;
+    padding: 4px 8px;
+    border : none;
+    font-style: "Poppins",sans-serif;
+    height : 6.5dvh;
+    width : 45dvw;
+    margin-top: 3.5dvh;
+    margin-bottom: 4dvh;
+    border-radius: 0.2dvb;
+}
+
+.body input::placeholder
+{
+    font-size: 12px;
+}
+
+.body .category
+{
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5dvh;
+}
+
+.body .select
+{
+    display: grid;
+    height : 35dvh;
+    width : 34dvw;
+    box-sizing: border-box;
+    gap : 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.select .choice
+{
+    border : 1.029px solid #E0E2D9;
+    display: flex;
+    gap : 8px;
+    align-items: center;
+    border-radius: 1.3dvb;
+    padding: 4px 6px;
+    box-sizing: border-box;
+    
+}
+.select .choice p
+{
+    font-family: "Inter",sans-serif;
+    font-size: 12px;
+
+}
+
+.body .btn
+{
+    background-color: #1877F2;
+    color: white;
+    width : 45dvw;
+    height : 6dvh;
+    margin-top: 5dvh;
+    border-radius: 2.8dvb;
+
+}
+
+
+
+
+.body input:focus
+{
+    outline: none;
+}
+
+.right
+{
+    min-height: 100dvh;
+    max-height: 100dvh;
+    min-width: 35dvw;
+    max-width: 35dvw; 
+    box-sizing: border-box;
+   
+   
+    
+}
+.right img
+{
+    
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    object-position: right;
+   
+    
+    
+     
+}
+
+@media(max-width : 480px){
+    .left{
+        min-width: 100dvw;
+        max-width : 100dvw;
+        padding : 5dvh 4dvw;
+        
+    }
+    .left .body{
+        width : 92dvw;
+        margin : 0;
+        margin-top : 2dvh;
+
+    }
+    .body input{
+        width : 92dvw;
+    }
+    .body input{
+        padding : 5px 10px;
+    }
+    .body input::placeholder{
+        font-size: 15px;
+    }
+    .body .category{
+        
+        font-weight: 475;
+        font-size: 14px;
+    }
+    .body .select{
+        width : 92dvw;
+    }
+    .body .select img{
+        height : 30px;
+        width : 30px;
+    }
+    .imgContainer{
+        height : 50px;
+        width : 40px;
+        
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    .body .select p{
+        font-size: 14.5px;
+    }
+    .body  .btn{
+        width : 92dvw;
+        font-size: 18px;
+    }
+}
+
+@media(max-width : 385px) and (max-height : 700px){
+    .body .select{
+        height : 30dvh;
+        gap : 10px;
+    }
+    .select .choice{
+        padding : 2px 3px;
+    }
+    .body .select p{
+        font-size: 13px;
+    }
+    .imgContainer{
+        height : 40px;
+        width : 40px;
+    }
+    .body .btn{
+        margin-top: 8dvh;
+    }
+    
+}
+

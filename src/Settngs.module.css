@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.create
+{
+    position: relative;
+    min-height: 100dvh;
+    max-height: 100dvh;
+    box-sizing: border-box;
+}
+
+
+
+.create .up
+{
+    width : 27dvw;
+    padding: 4dvh 2dvw;
+    font-family: "Poppins",sans-serif;
+    
+}
+.up .first
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.up .second
+{
+    font-size: 11px;
+}
+.create .main
+{
+    height : 79dvh;
+    width : 73dvw;
+    background-color: white;
+    margin-left: 3dvw;
+    border-radius: 4dvb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding : 3dvh 1.5dvw;
+   
+    
+    display : flex;
+    flex-direction: column;
+}
+.main .profile
+{
+    font-family: "Poppins",sans-serif;
+    font-size: 12px;
+    color: #1877F2;
+    padding: 0dvh 0.6dvw;
+    box-sizing: border-box;
+}
+
+.blue
+{
+    margin-top: 1dvh;
+    width : 6dvw;
+    height : 4px;
+    background-color: #1877F2;
+    
+
+    border-top-left-radius: 0.7dvb;
+    border-top-right-radius: 0.7dvb;
+    
+    
+    
+    
+}
+.line
+{
+    width : 70dvw;
+    display: flex;
+    height : 1px;
+    box-sizing: border-box;
+    
+}
+.one
+{
+    background-color: #1877F2;
+    width : 6dvw;
+    height : 1px;
+}
+.two
+{
+    background-color: #737373;
+    width : 64dvw;
+    height : 1px;
+}
+
+
+
+.form 
+{
+    box-sizing: border-box;
+    padding: 3dvh 2dvw;
+}
+
+.form input
+{
+    box-sizing: border-box;
+   
+    padding: 4px 8px;
+    border : 0.94px solid #3E3E3E;
+    font-family: "Inter",sans-serif;
+    height : 5.5dvh;
+    width : 30dvw;
+    margin-top: 0.5dvh;
+    margin-bottom: 1.5dvh;
+    border-radius: 1dvb;
+}
+
+.form form label
+{
+    font-family: "Poppins",sans-serif;
+    color : #666666;
+    
+    font-size: 11px;
+}
+
+
+
+
+.form input::placeholder
+{
+    font-size: 12px;
+}
+
+.save
+{
+    
+    height: 8dvh;
+    box-sizing: border-box;
+    margin-top: 2dvh;
+    padding: 1dvh 2.5dvw;
+    display: flex;
+    justify-content: flex-end;
+}
+.save .bn
+{
+    background-color: #1877F2;
+    height : 5.5dvh;
+    width : 10dvw;
+   
+}
+
+
+
+
+
+
+
+input:focus
+{
+    outline: none;
+    background-color: white;
+    border : 0.94px solid #3E3E3E;
+}
+
+@media (max-width : 480px){
+    .create .up{
+        padding : 3dvh 3dvw;
+        padding-bottom: 1dvh;
+        width : 94dvw;
+    }
+    .create .main{
+        width : 94dvw;
+        padding: 1dvh 0;
+        
+    }
+    .up .first{
+        font-size: 22px;
+    }
+    .up .second{
+        font-size: 12.5px;
+    }
+    .blue{
+        width : 26dvw;
+        height : 4px;
+    }
+    .line{
+        width : 94dvw;
+        
+    }
+    .two{
+        width : 94dvw;
+    }
+    .main .profile{
+        font-size: 14px;
+    }
+    .form{
+        padding: 1dvh 1dvw;
+    }
+    .form input{
+        width : 92dvw;
+        height: 6dvh;
+        font-size: 16px;
+    }
+    .form form label{
+        margin-left: 0.5dvw;
+        font-size: 15px;
+    }
+    .form input::placeholder{
+        font-size: 14.2px;
+    }
+    .save .bn{
+        width : 30dvw;
+        height : 4dvh;
+        font-size: 15px;
+        border-radius: 1.5dvb;
+    }
+    .first{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width : 94dvw;
+    }
+    .End{
+        display: flex;
+        align-items: center;
+        width : 94dvw;
+        justify-content: space-between;
+    }
+    .End > button {
+        
+        background-color: #DEDEDE;
+        width : 30dvw;
+        color : black;
+        font-size: 16px;
+        height : 4.5dvh;
+        display: flex;
+        border-radius: 1dvb;
+        padding : 5px 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .End > button img{
+        height : 18px;
+        width : 18px;
+    }
+    
+    
+}
+
+
+
+
+
+

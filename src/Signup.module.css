@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.container
+{
+    min-height: 100dvh;
+    max-height: 100dvh;
+    min-width: 100dvw;
+    max-width: 100dvw;
+    box-sizing: border-box;
+    display: flex;
+}
+.left
+{
+    min-height: 100dvh;
+    max-height: 100dvh;
+    min-width: 65dvw;
+    max-width: 65dvw;
+    box-sizing: border-box;
+    padding : 2.5dvh 4dvw;
+    
+
+}
+
+.left .top
+{
+    display: flex;
+    
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 670;
+    align-items: center;
+    font-size: 16px;
+    gap : 2px;
+}
+
+.top img
+{
+    height : 28px;
+    width : 28px;
+}
+
+.down
+{
+    box-sizing: border-box;
+    padding: 2dvh 8dvw;
+}
+.down .account
+{
+    display: flex;
+    width : 32dvw;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5dvh;
+    font-family: "Poppins",sans-serif;
+}
+
+.down .account p:nth-child(1)
+{
+    
+    color : #333333;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.down .account p:nth-child(2)
+{
+    color: #1877F2;
+    font-size: 12px;
+}
+
+.down input
+{
+    box-sizing: border-box;
+    background-color: #EFF0EC;
+    padding: 4px 8px;
+    border : none;
+    font-style: "Poppins",sans-serif;
+    height : 5.1dvh;
+    width : 32dvw;
+    margin-top: 1dvh;
+    margin-bottom: 1dvh;
+    border-radius: 1dvb;
+}
+
+form label
+{
+    font-family: "Poppins",sans-serif;
+    color : #666666;
+    
+    font-size: 11px;
+}
+.tc
+{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 1.5dvh;
+   
+}
+.tc input
+{
+    height : 12px;
+    width : 12px;
+}
+.tc p
+{
+    font-family: "Poppins",sans-serif;
+    font-size: 10.5px;
+}
+
+.btn
+{
+    height : 5.5dvh;
+    width : 32dvw;
+    border-radius: 2.5dvb;
+    font-style: "Inter",sans-serif;
+    margin-top: 2dvh;
+    margin-bottom: 5dvh;
+    
+}
+.down input::placeholder
+{
+    font-size: 10.5px;
+    font-family: "Inter",sans-serif;
+}
+
+
+.down .err
+{
+    color : red;
+    font-family: "Inter",sans-serif;
+    font-size: 8px;
+    
+}
+
+
+
+
+.down input:focus
+{
+    outline: none;
+}
+
+.down .last
+{
+    font-style: "Inter",sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    padding: 0dvh 8dvw;
+    box-sizing: border-box;
+}
+.blue
+{
+    color : #1877F2;
+    cursor: pointer;
+}
+
+
+
+
+.msg{
+    font-style: "Inter",sans-serif !important;
+    font-size: 11px;
+    color: #676B5F;
+}
+
+
+
+
+
+.right
+{
+    min-height: 100dvh;
+    max-height: 100dvh;
+    min-width: 35dvw;
+    max-width: 35dvw; 
+    box-sizing: border-box;
+   
+   
+    
+}
+.right img
+{
+    
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    object-position: right;
+   
+    
+    
+     
+}
+
+.container select
+{
+    height : 4dvh;
+    width : 6dvw;
+    font-size: 11px;
+    padding : 2px 3px;
+}
+
+.gend
+{
+    display: flex;
+    gap : 1dvw;
+    align-items: center;
+    margin-bottom: 1dvh;
+}
+
+.container select:focus{
+    outline : none;
+}
+
+
+@media(max-width : 480px){
+    .left{
+        max-width : 100dvw;
+        min-width : 100dvw;
+        padding : 4dvh 4dvw;
+    }
+    .down{
+        padding : 3dvh 0;
+    }
+    .down .account{
+        width : 92dvw;
+        font-family: "Poppins",sans-serif;
+    }
+    .down .account p:nth-child(1){
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .down input{
+        border: 0.61px solid #66666659;
+        background-color: white;
+        width :92dvw;
+        height : 5.5dvh;
+        margin-top: 1.2dvh;
+        margin-bottom: 1.2dvh;
+    }
+    .tandc{
+        display: flex;
+        gap : 2dvw;
+        align-items: center;
+        margin-top: 1dvh;
+        padding-left: 5px;
+    }
+    .tandc input{
+        height : 12.5px;
+        width : 12.5px;
+    }
+    .tandc p{
+        font-family: "Poppins",sans-serif;
+        font-size: 11.5px;
+    }
+    .gend{
+        display: flex;
+        gap : 2dvw;
+        margin-top: 1dvh;
+    }
+    .container select{
+        width : 24dvw;
+        height : 5dvh;
+        font-size: 12.5px;
+    }
+    .btn{
+        width : 92dvw;
+        font-size: 13px;
+        margin-top: 4dvh;
+        margin-bottom: 0;
+    }
+}
+@media(max-height : 700px) and (max-width : 480px){
+    .left{
+        padding: 4dvh 4dvw;
+    }
+    .down label{
+        font-size: 12px;
+    }
+    .down input{
+        height : 5dvh;
+        margin-top: 1dvh;
+        margin-bottom: 1dvh;
+    }
+    .down .account{
+        margin-bottom: 1dvh;
+    }
+    .btn{
+        margin-top: 4dvh;
+    }
+}

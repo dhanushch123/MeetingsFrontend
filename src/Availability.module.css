@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.create .up
+{
+    width : 27dvw;
+    padding: 3.5dvh 2dvw;
+    font-family: "Poppins",sans-serif;
+    padding-bottom: 2dvh;
+   
+    
+}
+.up .first
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.up .second
+{
+    font-size: 11px;
+}
+
+.header
+{
+    background-color: #E8E8E8;
+    height : 4.4dvh;
+    width : 16.5dvw;
+    box-sizing: border-box;
+    margin-left: 2dvw;
+ 
+    font-family: "Poppins",sans-serif;
+    font-size : 9.5px;
+    display: flex;
+    gap : 0.4dvw;
+    align-items: center;
+    justify-content : space-between;
+    padding : 0dvh 0.7dvw;
+    border-radius: 1.2dvb;
+
+}
+.header div
+{
+    display: flex;
+    gap : 0.8dvw;
+    align-items: center;
+    color :#676767;
+    background-color: #E8E8E8;
+    padding: 1px 0.5dvw;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 0.7dvb;
+}
+
+.header div img
+{
+    height : 12px;
+    width : 12px;
+}
+
+.avail
+{
+    background-color: white;
+    border: 1.5px solid #00000059;
+    height : 76dvh;
+    width : 28dvw;
+    margin-left: 2dvw;
+    border-radius: 2dvb;
+    margin-top: 2dvh;
+    box-sizing: border-box;
+}
+
+.top
+{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 2dvh 1.5dvw;
+    box-sizing: border-box;
+    gap : 5dvw;
+}
+
+.top .same
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.top .same p:nth-child(1)
+{
+    font-weight: 550;
+    font-size: 12.5px;
+}
+
+.top .same p:nth-child(2)
+{
+    font-weight: 320;
+    font-size: 9px;
+    color: #1877F2;
+}
+
+.line
+{
+    width : 27.8dvw;
+    height : 1px;
+    background-color: #00000059;
+    margin-top: 1dvh;
+}
+
+
+.week p 
+{
+    font-family: "Poppins",sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    margin-left: 1.5dvw;
+    margin-top: 1dvh;
+}
+
+.list
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3dvh;
+    gap: 2dvh;
+    height : 56dvh;
+ 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.list img
+{
+    cursor: pointer;
+}
+
+.list input[type='checkbox']
+{
+    height : 11px;
+    width : 11px;
+}
+
+.field,.actual
+{
+   
+    padding : 0.5dvh 0dvw;
+    padding-left: 1.7dvw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+    font-size: 11.5px;
+    width : 27.8dvw;
+    padding-left: 2dvw;
+    
+
+}
+.field .c1
+{
+    display: flex;
+    align-items: center;
+    gap : 0.5dvw;
+    margin-right: 2dvw;
+    width: 4dvw;
+}
+
+.field .c2
+{
+    display: flex;
+    width : 16dvw;
+    gap : 0px;
+    align-items: center;
+
+  
+    
+}
+
+
+.field .c3
+{
+    display: flex;
+    align-items: center;
+    gap : 0.6dvw;
+}
+
+.c3 img
+{
+    height : 12px;
+    width : 12px;
+   
+    
+}
+
+.c3 img:nth-child(1)
+{
+    height : 11px;
+    width: 11px;
+}
+
+.actual .child3 img
+{
+    height : 12px;
+    width : 12px;
+    display: flex;
+}
+.actual .child3 img:nth-child(1)
+{
+    height : 11px;
+    width: 11px;
+}
+
+.actual .child1
+{
+    display: flex;
+    align-items: center;
+    gap : 0.5dvw;
+   
+    width : 4dvw;
+}
+
+.actual .child2
+{
+    display: flex;
+    width : 16dvw;
+    gap : 0px;
+    align-items: center;
+    margin-left: 2dvw;
+    
+}
+
+.addn
+{
+    display: flex;
+    width : 16dvw;
+    gap : 0px;
+    align-items: center;
+    margin-left: 8dvw;
+    margin-top: 1dvh;
+}
+
+ .btw
+{
+    background-color: #00000073;
+    height: 1px;
+    width : 6px;
+}
+.actual .child2 img{
+    margin-left: 1dvw;
+    height: 9px;
+    width : 9px;
+}
+
+.addn img
+{
+    margin-left: 1dvw;
+    height: 9px;
+    width : 9px;
+}
+
+.actual .child3
+{
+    display: flex;
+    align-items: center;
+    gap : 0.6dvw;
+    
+}
+
+
+input[type="time"]
+{
+    height : 3.8dvh;
+    width : 4.6dvw;
+    border: 0.8px solid #00000040;
+    border-radius: 0.5dvb;
+    background-color: #F3F3F1;
+    font-size: 11.5px;
+    padding: 2px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ 
+
+
+
+
+
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="time"]::placeholder {
+    color: #F3F3F1;
+}
+
+
+input[type="time"]::-moz-placeholder {
+    opacity: 0;
+    color: #F3F3F1;
+}
+
+
+input[type="time"]::-webkit-input-placeholder {
+    opacity: 0;
+    color: #F3F3F1;
+}
+
+
+input[type="time"]::-ms-input-placeholder {
+    opacity: 0;
+    color: #F3F3F1;
+}
+
+
+
+.list::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.list::-webkit-scrollbar-track {
+    background: #b0b0b0; 
+    border-radius: 6px;  
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 6px; 
+    border: 2px solid #b0b0b0; 
+}
+
+
+.list::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0; 
+}
+
+.calendar
+{
+    height : 76dvh;
+    width : 74dvw;
+    border : 2px solid #00000059;
+    border-radius: 2dvb;
+    background-color: white;
+    margin: 2dvh 2dvw;
+    padding: 1dvh 1dvw;
+    box-sizing: border-box;
+   
+}
+
+.line1
+{
+    width : 70dvw;
+    height : 0.8px;
+    background-color: #00000059;
+    margin-top: 0.5dvh;
+    margin-bottom: 1dvh;
+}
+
+
+.calendly
+{
+    
+    height : 60dvh;
+    width  : 70dvw;
+    padding : 1dvh 1dvw;
+    box-sizing: border-box;
+}
+
+
+@media(max-width : 480px){
+    .create{
+        display: flex;
+        flex-direction: column;
+        padding: 0 3dvw;
+    }
+    .create .up{
+        width : 94dvw;
+        padding: 3dvh 0;
+        padding-bottom: 1dvh;
+    }
+    .create .first{
+        display : flex;
+        align-items: center;
+        justify-content: space-between;
+       
+
+        
+    }
+    .up .second{
+        font-size: 12px;
+        width : 70dvw;
+    }
+    .header{
+        width : 73dvw;
+        height : 4dvh;
+        font-size: 13px;
+        align-items: center;
+        margin-left: 0;
+        padding: 0 2dvw;
+    }
+    .header div{
+        height: 2.8dvh;
+        padding: 0.5dvh 3dvw;
+    }
+    .header div img{
+        height : 13px;
+        width : 13px;
+    }
+    .avail{
+       
+        width : 94dvw;
+        height : 65dvh;
+        margin-left: 0;
+        
+    }
+    .top{
+       
+        width : 75dvw;
+        
+        gap : 20dvw;
+        padding-bottom: 1dvh;
+ 
+    }
+    .calendar .top{
+        padding-top: 1dvh;
+    }
+    .avail .top{
+        width : 75dvw;
+        
+        gap : 20dvw;
+
+    }
+    .avail .line,.calendar .line1{
+        width : 91dvw;
+        margin-left: 1dvw;
+        
+    }
+    
+    .top .same p:nth-child(1){
+        font-size: 17px;
+    }
+    .top .same p:nth-child(2){
+        font-size: 11px;
+    }
+    .list{
+        
+        margin-top: 1.5dvh;
+        height : 52dvh;
+        -webkit-overflow-scrolling: touch; 
+        scrollbar-width: none;
+        padding-left: 1dvw;
+        padding-bottom: 2dvh;
+        
+    }
+    .list::-webkit-scrollbar {
+        display: none;
+    }
+   
+        
+        
+        
+    
+    .list .field,.actual{
+        
+        width : 88dvw;
+        gap : 3dvw;
+        
+    }
+    .field .c1{
+        width : 10dvw;
+    }
+    .field .c1,.c2{
+        font-size: 14px;
+    }
+    .field .c2{
+        width : 55dvw;
+        
+       
+        
+    }
+    .field .c3 img:nth-child(1){
+        height : 14px;
+        width : 14px;
+        
+    }
+    .field .c3 img:nth-child(2){
+        height : 15px;
+        width : 15px;
+    }
+    .field .c3{
+        gap : 2dvw;
+        margin-left: 3dvw;
+    }
+    
+    .actual .child1{
+        font-size: 13.8px;
+        width : 10dvw;
+    }
+    .actual .child1 input[type="checkbox"]{
+        height : 14px;
+        width : 14px;
+        
+    }
+
+    .actual .child2{
+        
+        width : 55dvw;
+        
+        height : 4.5dvh;
+        
+        
+
+    }
+    
+    input[type="time"]{
+        width : 27dvw;
+        font-size: 16px;
+        
+        
+    }
+    .addn input[type = "time"]{
+        width : 26.7dvw;
+    }
+    .actual .child3 img:nth-child(1){
+        height : 14px;
+        width : 14px;
+    }
+    .actual .child3 img:nth-child(2){
+        height : 15px;
+        width : 15px;
+    }
+    .actual .child3{
+        gap : 2dvw;
+        margin-left: 3dvw;
+    }
+    .addn{
+        
+        width : 64dvw;
+        margin-left: 16dvw;
+        
+        
+    }
+    .addn img{
+        height : 13px;
+        width : 13px;
+        margin-left: 5dvw;
+    }
+    .calendar{
+        padding : 1dvh 0;
+        margin-left: 0;
+        width : 94dvw;
+        height : 70dvh;
+        overflow: hidden;
+    }
+    .calendly{
+        width : 92dvw;
+        padding : 0 0dvw;
+    }
+    
+    
+    
+}
+
+
+  
+
+
+
+  
