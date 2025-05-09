@@ -26,7 +26,7 @@ function Eventlist({success,setSuccess,user,isMobile,setActiveComponent}) {
     async function fetchDetails(){
         try{
             
-            let request = await axios.get('http://localhost:2500/event/getEvents',{withCredentials : true})
+            let request = await axios.get('https://meetingsbackend.onrender.com/event/getEvents',{withCredentials : true})
             setArr(request.data.events)
            
             
@@ -110,7 +110,7 @@ function Eventlist({success,setSuccess,user,isMobile,setActiveComponent}) {
                     <div  className={styles.dwn}> <img onClick={async ()=>{
                         
                         try{
-                            let request = await axios.put(`http://localhost:2500/event/status/${item._id}`,{},{withCredentials : true})
+                            let request = await axios.put(`https://meetingsbackend.onrender.com/event/status/${item._id}`,{},{withCredentials : true})
                             
                             setArr(prevArr => {
                                 const newArr = [...prevArr]; // Copy array
@@ -134,7 +134,7 @@ function Eventlist({success,setSuccess,user,isMobile,setActiveComponent}) {
                      }} src={Copy}/> <img onClick={async()=>{
                        
                         try{
-                            let request = await axios.delete(`http://localhost:2500/event/remove/${item._id}`,{withCredentials : true})
+                            let request = await axios.delete(`https://meetingsbackend.onrender.com/event/remove/${item._id}`,{withCredentials : true})
                             if (request.status === 200) { // Check if deletion was successful
                                 setArr(prevArr => prevArr.filter(event => event._id !== item._id)); // Remove from past events
                                 
@@ -204,7 +204,7 @@ function Eventlist({success,setSuccess,user,isMobile,setActiveComponent}) {
                     <div  className={styles.dwn}> <img onClick={async ()=>{
                         
                         try{
-                            let request = await axios.put(`http://localhost:2500/event/status/${item._id}`,{},{withCredentials : true})
+                            let request = await axios.put(`https://meetingsbackend.onrender.com/event/status/${item._id}`,{},{withCredentials : true})
                             
                             setArr(prevArr => {
                                 const newArr = [...prevArr]; // Copy array
@@ -227,7 +227,7 @@ function Eventlist({success,setSuccess,user,isMobile,setActiveComponent}) {
                      }} src={Copy}/> <img onClick={async()=>{
                         
                         try{
-                            let request = await axios.delete(`http://localhost:2500/event/remove/${item._id}`,{withCredentials : true})
+                            let request = await axios.delete(`https://meetingsbackend.onrender.com/event/remove/${item._id}`,{withCredentials : true})
                             if (request.status === 200) { // Check if deletion was successful
                                 setArr(prevArr => prevArr.filter(event => event._id !== item._id)); // Remove from past events
                                 

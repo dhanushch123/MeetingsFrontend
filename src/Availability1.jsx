@@ -82,7 +82,7 @@ function Availability1({ user, activeComponent,isMobile}) {
   async function getAvailability() {
     try {
       let request = await axios.get(
-        `http://localhost:2500/user/getAvailability/${user.id}`,
+        `https://meetingsbackend.onrender.com/user/getAvailability/${user.id}`,
         { withCredentials: true }
       );
       // lets see the structure and set the values
@@ -132,7 +132,7 @@ function Availability1({ user, activeComponent,isMobile}) {
       availability[4].slots = passedArr[4];
       availability[5].slots = passedArr[5];
       let request = await axios.put(
-        `http://localhost:2500/user/updateAvailability/${user.id}`,
+        `https://meetingsbackend.onrender.com/user/updateAvailability/${user.id}`,
         { updatedAvailability: availability },
         { withCredentials: true }
       );

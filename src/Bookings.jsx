@@ -54,7 +54,7 @@ function Bookings({ user,isMobile}){
       try {
         //console.log(user.id);
         let request = await axios.get(
-          `http://localhost:2500/user/getPast/${user.id}`,
+          `https://meetingsbackend.onrender.com/user/getPast/${user.id}`,
           { withCredentials: true }
         );
         
@@ -69,7 +69,7 @@ function Bookings({ user,isMobile}){
       try {
         //console.log(user.id);
         let request = await axios.get(
-          `http://localhost:2500/user/getPending/${user.id}`,
+          `https://meetingsbackend.onrender.com/user/getPending/${user.id}`,
           { withCredentials: true }
         );
         setPending(request.data.pending);

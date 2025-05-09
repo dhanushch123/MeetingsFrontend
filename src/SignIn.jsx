@@ -37,12 +37,12 @@ function SignIn({isMobile}) {
             e.preventDefault()
            
             try{
-                let request = await axios.post('http://localhost:2500/user/login',{
+                let request = await axios.post('https://meetingsbackend.onrender.com/user/login',{
                     username,password
                 },{withCredentials : true})
                
 
-                let request2 = await axios.get('http://localhost:2500/event',{withCredentials : true})
+                let request2 = await axios.get('https://meetingsbackend.onrender.com/event',{withCredentials : true})
                 if(request2.status == 200)
                 {
                     navigate('/event')
@@ -114,12 +114,12 @@ function SignIn({isMobile}) {
             e.preventDefault()
             
             try{
-                let request = await axios.post('http://localhost:2500/user/login',{
+                let request = await axios.post('https://meetingsbackend.onrender.com/user/login',{
                     username,password
                 },{withCredentials : true})
                 
 
-                let request2 = await axios.get('http://localhost:2500/event',{withCredentials : true})
+                let request2 = await axios.get('https://meetingsbackend.onrender.com/event',{withCredentials : true})
                 if(request2.status == 200)
                 {
                     navigate('/event')
