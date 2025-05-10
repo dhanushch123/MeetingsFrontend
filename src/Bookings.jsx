@@ -53,15 +53,17 @@ function Bookings({ user,isMobile}){
       
       try {
         //console.log(user.id);
+        console.log("In past section")
         let request = await axios.get(
-          `${VITE_BACKEND_URL}/user/getPast/${user.id}`,
+          `${import.meta.env.VITE_BACKEND_URL}/user/getPast/${user.id}`,
           { withCredentials: true }
         );
+        
         
         setPast(request.data.past)
         
       } catch (err) {
-        
+        console.log(err.response.data.message)
       }
     }
     else
@@ -87,6 +89,7 @@ function Bookings({ user,isMobile}){
     // in upcoming we have to show accepted
     // in canceled we have to show rejected
     // we have  event and its status [rejected,accepted,pending]
+    console.log(tabs[activeIndex])
     getPending();
     setShowParticipants(false)
   }, [activeIndex]);
