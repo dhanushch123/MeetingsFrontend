@@ -89,7 +89,7 @@ function Bookings({ user,isMobile}){
     // in upcoming we have to show accepted
     // in canceled we have to show rejected
     // we have  event and its status [rejected,accepted,pending]
-    console.log(tabs[activeIndex])
+    
     getPending();
     setShowParticipants(false)
   }, [activeIndex]);

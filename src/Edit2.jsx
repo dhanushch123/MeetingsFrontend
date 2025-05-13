@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Next.module.css'
 import Emj from './components/Emj.svg'
-import { useState } from 'react'
+import { useState,useEffect} from 'react'
 import Edit from './components/Edit.svg'
 import axios from 'axios'
 
@@ -22,12 +22,35 @@ const months = {
 };
 
 
-function Edit2({setNext,setSuccess,details,setBack,isMobile}) {
+function Edit2({setNext,setSuccess,details,setBack,isMobile,user}) {
   const[name,setName] = useState(details.meetingname)
   const[edit,setEdit] = useState(false)
   const[color,setColor] = useState(details.color)
   const[elink,setLink] = useState(details.elink)
-  const[mails,setMails] = useState(details.participants.join(","))
+  const[mails,setMails] = useState([])
+  
+  
+    const[selectedMails,setSelectedMails] = useState([])
+    const[show,setShow] = useState(false)
+    
+
+      async function getDetails(){
+        try{
+          let request = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/user/getDetails`)
+          let info = request.data.details
+          setMails(info)
+          setSelectedMails(details.participants)
+          
+
+        }
+        catch(err){
+          //
+        }
+      }
+      
+      useEffect(()=>{
+        getDetails()
+      },[])
 
   return (
     <div className={styles.main}> 
@@ -89,8 +112,8 @@ function Edit2({setNext,setSuccess,details,setBack,isMobile}) {
         
         if(elink && mails)
         {
-          details.participants = mails.split(',').map(email => email.trim());
-          details.participants = [...new Set(details.participants)];
+          details.participants = selectedMails
+         
           
           details.day = day;
           details.elink = elink
@@ -144,10 +167,9 @@ function Edit2({setNext,setSuccess,details,setBack,isMobile}) {
       </div>
       <div className={styles.field}> 
         <p className={styles.label}> Add Emails <span className={styles.red}>*</span> </p>
-        <input value={mails} onChange={(e)=>{
-           setMails(e.target.value)
-           
-        }}  type='email' multiple placeholder='Add member Emails'/>
+        <div className={styles.addEmail}> <p onClick={()=>{
+                  setShow(!show)
+                }}>  ⌵ </p> <p> Select Emails</p></div>
       </div>
       </form>
 
@@ -163,6 +185,64 @@ function Edit2({setNext,setSuccess,details,setBack,isMobile}) {
                   document.getElementById("form")?.requestSubmit()
                  }}  className={styles.save}> Save</button> 
               </div>
+    {show ? !isMobile ? (<div className={styles.emailList}>
+           <div className={styles.inside}> 
+           { mails.map((item,index)=>{
+              
+              if(user.email === item.email){
+                
+                return ""
+              }
+              return(
+                <div key={item.email} className={styles.entry}> <input checked={selectedMails.includes(item.email)} onChange={(e)=>{
+                  if(e.target.checked){
+                    setSelectedMails((prev)=>{
+                      return [...prev,item.email]
+                    })
+                  }
+                  else{
+                    setSelectedMails((prev)=>{
+                      return prev.filter((entry)=>{
+                        return item.email !== entry
+                      })
+                    })
+                  }
+                  
+                    
+                }} type='checkbox'/> <p className={styles.child1}>{item.email}</p> <p className={styles.child2}> {item.firstname} {item.lastname}</p>  </div>
+              )
+            })}
+           </div>
+           </div>) : (<div className={styles.emailList}>
+           <div className={styles.inside}> { mails.map((item,index)=>{
+              
+              if(user.email === item.email){
+                return ""
+              }
+              
+              return(
+                <div key={item.email} className={styles.entry}> <input checked={selectedMails.includes(item.email)} onChange={(e)=>{
+                  if(e.target.checked){
+                    setSelectedMails((prev)=>{
+                      return [...prev,item.email]
+                    })
+                  }
+                  else{
+                    setSelectedMails((prev)=>{
+                      return prev.filter((entry)=>{
+                        return item.email !== entry
+                      })
+                    })
+                  }
+                  console.log(selectedMails)
+                    
+                }} type='checkbox'/> <div className={styles.EFS}> 
+                   <p> {item.email} </p>
+                   <p> {item.firstname} {item.lastname} </p>
+                   </div> </div>
+              )
+            })}</div>
+           </div>) : ""}
     </div>
   )
 }

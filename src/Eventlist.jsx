@@ -246,7 +246,7 @@ function Eventlist({success,setSuccess,user,isMobile,setActiveComponent}) {
         </div>
     </>)}
     </div>
-  ) : <Edit1 component = {component} setSuccess={setSuccess} setEdit = {setEdit} isMobile = {isMobile} />
+  ) : <Edit1 component = {component} setSuccess={setSuccess} setEdit = {setEdit} isMobile = {isMobile} user = {user}/>
 }
 
 export default Eventlist

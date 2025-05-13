@@ -15,6 +15,8 @@
     flex-direction: column;
     padding : 2dvh 0px;
     align-items: center;
+    position : relative;
+   
 }
 
 .main .heading
@@ -23,6 +25,7 @@
     color : #1877F2;
     font-size: 22px;
     font-weight: 500;
+    
     margin-bottom: 2dvh;
     
 }
@@ -186,6 +189,84 @@
     padding : 1dvh 1dvw;
 
 }
+.field .addEmail{
+    border: 1.5px solid #E0E0E0;
+    border-radius: 1.5dvb;
+    height : 6dvh;
+    width : 34dvw;
+    padding : 1dvh 0.5dvw;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.addEmail p:nth-child(2){
+    color: #8A8A8A;
+    font-size: 10px;
+}
+.emailList{
+    position: absolute;
+    width : 34dvw;
+    background-color: white;
+    
+    z-index : 3;
+    bottom: 18dvh;
+    border-radius: 1.5dvb;
+    
+    padding : 2dvh 2dvw;
+    min-height: 4dvh;
+    max-height : 35dvh;
+    font-family: "Poppins",sans-serif;
+    font-size: 11.5px;
+    
+    
+    box-shadow: 0px 0px 10px 5px #1877F24D;
+}
+.emailList .inside{
+    display: flex;
+    flex-direction: column;
+    gap : 1dvh;
+    padding : 1dvh 0;
+    
+    overflow-y: scroll;
+    height : 33dvh;
+}
+.inside::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.inside::-webkit-scrollbar-track {
+    background: #b0b0b0; 
+    border-radius: 6px;  
+}
+
+.inside::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 6px; 
+    border: 2px solid #b0b0b0; 
+}
+
+
+.inside::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0; 
+}
+.emailList .entry{
+    display: flex;
+    align-items: center;
+    gap : 0.5dvw;
+}
+.entry .child1{
+    
+    width : 17dvw;
+    text-overflow: ellipsis;
+}
+.entry .child2{
+    width : 13dvw;
+    text-overflow: ellipsis;
+}
+
+
+
 .field .label
 {
     font-size: 13px;
@@ -233,12 +314,14 @@
     color: white;
 }
 
+
 @media(max-width : 480px){
     .main{
         width : 90dvw;
       
         margin-left: 2dvw;
         padding: 1dvh 0;
+        
         align-items : start;
     }
     .main .heading{
@@ -291,6 +374,34 @@
     .field input{
         width : 63dvw;
     }
+    .field .addEmail{
+        width : 63dvw;
+        padding-left: 1dvw;
+    }
+    .emailList{
+        width : 63dvw;
+        
+       
+        left : 26dvw;
+        bottom : 25dvh;
+       
+        
+        padding : 2dvh 3dvw;
+        
+    }
+    .inside{
+        -webkit-overflow-scrolling: touch; 
+        scrollbar-width: none;
+    }
+    .emailList .entry{
+        gap : 2dvw;
+    }
+    .EFS{
+        flex-direction: column;
+        gap : 0.5dvh;
+    }
+
+    
     .d2{
         
         width : 90dvw;
@@ -305,4 +416,16 @@
         border-radius: 1.3dvb;
     }
     
+    
+}
+@media(max-width : 480px) and (max-height : 800px){
+    .emailList{
+        bottom : 23dvh;
+    }
+}
+
+@media(max-width : 480px) and (max-height : 700px){
+    .emailList{
+        bottom : 22dvh;
+    }
 }

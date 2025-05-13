@@ -164,6 +164,8 @@
     align-items: center;
     gap : 0dvw;
     overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 .ending .scnd{

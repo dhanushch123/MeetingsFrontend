@@ -3,7 +3,7 @@ import styles from './Create.module.css'
 import { useState,useEffect } from 'react'
 import Edit2 from './Edit2';
 
-function Edit1({component,setSuccess,setEdit,isMobile}) {
+function Edit1({component,setSuccess,setEdit,isMobile,user}) {
 
   const [minDate, setMinDate] = useState("");
   
@@ -93,7 +93,7 @@ let isValidEventTime = (eventDateStr, eventTime, eventMeridian) => {
         <p className={styles.first}> Edit Event </p>
         <p className={styles.second}>Create events to share for people to book on your calendar.</p>
         </div>
-        {next?(<Edit2 setBack = {setEdit} details = {details} setNext={setNext} setSuccess = {setSuccess} isMobile = {isMobile}/>) : (<div className={styles.main}> 
+        {next?(<Edit2 setBack = {setEdit} details = {details} setNext={setNext} setSuccess = {setSuccess} isMobile = {isMobile} user = {user}/>) : (<div className={styles.main}> 
           <p className={styles.heading}>Add Event</p>
           <div className={styles.line}></div>
           <div className={styles.edetails}>
