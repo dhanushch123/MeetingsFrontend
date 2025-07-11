@@ -24,11 +24,7 @@ function Rtr() {
         <Route path='/signin' element = {<SignIn isMobile = {isMobile}  />}/>
         <Route path = '/signup' element = {<SignUp isMobile = {isMobile} />}/>
         <Route path = '/preferences' element ={<Preferences isMobile = {isMobile} />}/>
-        <Route path="/event" element={
-        
-        <Events isMobile = {isMobile} />
-        
-        }/>
+        <Route path="/event" element={<Events isMobile = {isMobile} />}/>
 
 
     </Routes>
