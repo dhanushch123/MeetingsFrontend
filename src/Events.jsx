@@ -41,7 +41,7 @@ function Events({isMobile}) {
   {
     try{
       let request = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/event`,
-        {withCredentials}
+        {withCredentials : true}
       )
       if(request.data.status == 200){
       // we need username and   participants in the database
