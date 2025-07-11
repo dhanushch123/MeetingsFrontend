@@ -44,7 +44,7 @@ function Events({isMobile}) {
         {
           withCredentials : true,
           headers : {
-          'Cache-Control' : 'no-cache,no-store,must-revaliate',
+          'Cache-Control' : 'no-cache,no-store,must-revalidate',
           'Pragma' : 'no-cache',
           'Expires' : '0',
           }
