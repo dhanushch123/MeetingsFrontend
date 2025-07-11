@@ -14,7 +14,7 @@ import Plus from './components/Plus.svg'
 import { useState,useEffect} from 'react';
 import Emj from './components/Emj.svg'
 import Create from './Create';
-import axios, { AxiosHeaders } from 'axios'
+import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import Bookings from './Bookings'
 import Eventlist from './Eventlist';
@@ -40,9 +40,7 @@ function Events({isMobile}) {
   async function fetchDetails()
   {
     try{
-      let request = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/event`,
-        {withCredentials : true}
-      )
+      let request = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/event`, {withCredentials : true})
       if(request.data.status == 200){
       // we need username and   participants in the database
       setUname(`${request.data.user.username}`)
